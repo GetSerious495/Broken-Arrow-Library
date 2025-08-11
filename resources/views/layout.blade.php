@@ -8,15 +8,7 @@
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            background-color: #28242c;
-        }
-    </style>
+    @vite(['resources/css/mainpage.css'])
 
 </head>
 

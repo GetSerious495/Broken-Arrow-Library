@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #28242c;
+}
+
+.option-box {
+    height: 10rem;
+    width: 10rem;
+    border: 5px solid #fff;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+}
