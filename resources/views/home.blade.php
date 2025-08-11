@@ -8,18 +8,24 @@
     </div>
     <div class="container d-flex justify-content-evenly" style="width:40rem">
         <div class="option-box">
+            <p class="text-light">Weapons</p>
         </div>
         <div class="option-box">
+            <p class="text-light">Units</p>
         </div>
         <div class="option-box">
+            <p class="text-light">Specifications</p>
         </div>
     </div>
     <div class="container d-flex justify-content-evenly" style="width:40rem">
         <div class="option-box">
+            <p class="text-light">Deck creator</p>
         </div>
         <div class="option-box">
+            <p class="text-light">Comparision</p>
         </div>
         <div class="option-box">
+            <p class="text-light">Credits</p>
         </div>
     </div>
 

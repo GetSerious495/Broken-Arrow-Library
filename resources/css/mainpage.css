@@ -11,4 +11,7 @@ body {
     border: 5px solid #fff;
     border-radius: 0.5rem;
     margin-top: 5rem;
+    display: flex;               /* make it flex */
+    align-items: center;         /* vertical center */
+    justify-content: center;
 }
