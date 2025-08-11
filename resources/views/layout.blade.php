@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #383c44">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #313235">
         <div class="container-fluid">
             <a class="navbar-brand text-light" href="#">BA Library</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,7 +34,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #383c44">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #313235">
                             <li><a class="dropdown-item text-light" href="#">Action</a></li>
                             <li><a class="dropdown-item text-light" href="#">Another action</a></li>
                             <li>

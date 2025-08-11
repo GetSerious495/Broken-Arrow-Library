@@ -6,9 +6,20 @@
     <div class="container d-flex text-light justify-content-center">
         <h1>Broken Arrow Library</h1>
     </div>
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-evenly" style="width:40rem">
         <div class="option-box">
-            
+        </div>
+        <div class="option-box">
+        </div>
+        <div class="option-box">
+        </div>
+    </div>
+    <div class="container d-flex justify-content-evenly" style="width:40rem">
+        <div class="option-box">
+        </div>
+        <div class="option-box">
+        </div>
+        <div class="option-box">
         </div>
     </div>
 
