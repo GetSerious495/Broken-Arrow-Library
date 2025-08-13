@@ -7,9 +7,11 @@
         <h1>Broken Arrow Library</h1>
     </div>
     <div class="container d-flex justify-content-evenly" style="width:40rem">
-        <div class="option-box">
-            <p class="text-light">Weapons</p>
-        </div>
+        <a href="{{ route('weapons') }}">
+            <div class="option-box">
+                <p class="text-light">Weapons</p>
+            </div>
+        </a>
         <div class="option-box">
             <p class="text-light">Units</p>
         </div>
@@ -30,4 +32,3 @@
     </div>
 
 @endsection
-

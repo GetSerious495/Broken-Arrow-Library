@@ -5,13 +5,33 @@ body {
     background-color: #28242c;
 }
 
+a {
+    text-decoration: none;
+}
+
 .option-box {
     height: 10rem;
     width: 10rem;
     border: 5px solid #fff;
     border-radius: 0.5rem;
     margin-top: 5rem;
-    display: flex;               /* make it flex */
-    align-items: center;         /* vertical center */
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
+
+.stats-box {
+    height: 20rem;
+    width: 30rem;
+    border: 5px solid #fff;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-content {
+    margin-bottom: 2rem;
+}
+

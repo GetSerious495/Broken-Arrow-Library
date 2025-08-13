@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [AdminController::class, 'index'])->name('home');
+
+Route::get('/weapons', [AdminController::class, 'weapons'])->name('weapons');
