@@ -14,8 +14,8 @@ class WeaponSeeder extends Seeder
     public function run(): void
     {
         Weapon::create([
-            'weapons_name' => 'AK-74RMO',
-            'weapons_damage' => 1.5,
+            'weapons_name' => 'M4A1',
+            'weapons_damage' => 1.2,
             'weapons_range' => 400,
             'weapons_penetrate' => 15,
             'weapons_reload' => 4, 
