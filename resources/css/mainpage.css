@@ -21,14 +21,14 @@ a {
 }
 
 .stats-box {
-    height: 20rem;
+    height: 16rem;
     width: 30rem;
-    border: 5px solid #fff;
+    border: 0.2rem solid #fff;
     border-radius: 0.5rem;
     margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* push content to left */
+    align-items: flex-start;     /* push content to top */
+    padding: 1.5rem;    
 }
 
 .stats-content {
@@ -36,6 +36,6 @@ a {
 }
 
 .weapon-img{
-    width: auto;
+    width: 10rem;
     height: auto;
 }
