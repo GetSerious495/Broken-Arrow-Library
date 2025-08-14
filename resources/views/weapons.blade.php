@@ -5,7 +5,16 @@
 @section('content')
     @foreach ($weapons as $weapon)
         <div class="stats-box container d-flex justify-content-evenly">
-            <div class="stats-content container d-flex align-self-end justify-content-evenly text-light">
+            <img src="{{ asset('storage/' . $weapon->image) }}" alt="{{ $weapon->weapons_name }}" class="weapon-img">
+
+
+
+
+
+
+
+
+            <!--<div class="stats-content container d-flex align-self-end justify-content-evenly text-light">
                 <p>{{ $weapon->weapons_name }}</p>
             </div>
             <div class="stats-content container d-flex align-self-end justify-content-evenly text-light">
@@ -33,7 +42,7 @@
                 <div class="stats-content container d-flex align-self-end justify-content-evenly text-light">
                     <p>{{ $launcher->launchers_lowalt_range }}</p>
                 </div>
-            @endforeach
+            @endforeach-->
         </div>
     @endforeach
 @endsection

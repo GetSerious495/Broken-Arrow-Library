@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('test_table', function (Blueprint $table) {
+        Schema::create('rifles', function (Blueprint $table) {
             $table->id();
-            $table->string('weapons_name');
-            $table->float('weapons_damage');
-            $table->integer('weapons_range');
-            $table->integer('weapons_penetrate');
-            $table->integer('weapons_reload');
-            $table->float('weapons_supply');
+            $table->foreignId('weapon_id')->constrained('base_weapons')->onDelete('cascade');
+            $table->integer('weapons_dispersion_x');
+            $table->integer('weapons_dispersion_y');
+            $table->integer('weapons_mag_size');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('test_tables');
+        Schema::dropIfExists('rifles');
     }
 };

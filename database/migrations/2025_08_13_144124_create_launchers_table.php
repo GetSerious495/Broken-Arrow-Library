@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('launchers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('weapon_id')->constrained('test_table')->onDelete('cascade');
+            $table->foreignId('weapon_id')->constrained('base_weapons')->onDelete('cascade');
             $table->integer('launchers_supply_time');
             $table->integer('launchers_intercept');
             $table->integer('launchers_lowalt_range');
