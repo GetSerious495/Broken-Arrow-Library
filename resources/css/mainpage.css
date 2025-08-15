@@ -20,22 +20,89 @@ a {
     justify-content: center;
 }
 
+.weapon-sidebar {
+    height: calc(100vh - 56px);
+    width: 12%;
+    background-color: black;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    padding: 1rem;
+    font-size: large;
+}
+
 .stats-box {
-    height: 16rem;
+    height: 18rem;
     width: 30rem;
     border: 0.2rem solid #fff;
     border-radius: 0.5rem;
     margin-top: 5rem;
-    justify-content: flex-start; /* push content to left */
-    align-items: flex-start;     /* push content to top */
-    padding: 1.5rem;    
+    margin-left: 15%;
+    justify-content: flex-start;
+    /* push content to left */
+    align-items: flex-start;
+    /* push content to top */
+    padding: 1rem;
+
 }
 
+.stats-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stats-title p{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 0.5rem;
+
+}
+
+.stats-top {
+    min-height: calc(100% - 8rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.5rem;
+}
+
+.stats-img img {
+    width: 14rem;
+    height: auto;
+}
 .stats-content {
     margin-bottom: 2rem;
+    text-align: center;
+    align-self: flex-end;
+    flex: 1;
 }
 
-.weapon-img{
-    width: 10rem;
+.flex-spacer {
+    flex: 1;
+}
+
+.stats-target {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-right: 3rem;
+}
+
+.stats-target img {
+    width: 2rem;
     height: auto;
 }
