@@ -31,6 +31,11 @@ a {
     font-size: large;
 }
 
+.content-area{
+    width: 40%;
+    margin-left: 14rem;
+}
+
 .stats-box {
     height: 18rem;
     width: 30rem;

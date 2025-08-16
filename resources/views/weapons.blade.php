@@ -4,17 +4,19 @@
 
 @section('content')
     <div class="weapon-sidebar d-flex flex-column justify-content-start">
-        <p class="text-light" style="font-size: 2rem">Weapons</p>
-        <p class="text-light">Sort by</p>
-        <button class="btn btn-success text-light">Search</button>
+        <div class="weapon-sidebar-content">
+            <p class="text-light" style="font-size: 2rem">Weapons</p>
+            <p class="text-light">Sort by</p>
+            <button class="btn btn-success text-light">Search</button>
+        </div>
     </div>
 
-    <div class="d-flex justify-content-start">
+    <div class="d-flex justify-content-start content-area">
         @foreach ($weapons as $weapon)
             <div class="stats-box">
                 <div class="stats-title text-light">
-                        <p>{{ $weapon->weapons_name }}</p>
-                    </div>
+                    <p>{{ $weapon->weapons_name }}</p>
+                </div>
                 <div class="stats-top">
                     <div class="stats-target">
                         @if ($weapon->weapons_target_inf)
@@ -27,9 +29,9 @@
                             <img src="{{ asset('storage/icons/Target-Type-Helicopters-Icon_png.png') }}" alt="Heli">
                         @endif
                     </div>
-                    
+
                     <div class="stats-img">
-                            <img src="{{ asset('storage/' . $weapon->image) }}" alt="{{ $weapon->weapons_name }}">
+                        <img src="{{ asset('storage/' . $weapon->image) }}" alt="{{ $weapon->weapons_name }}">
                     </div>
                 </div>
                 <div class="stats-row">
@@ -60,63 +62,5 @@
             </div>
         @endforeach
     </div>
-
-
-
-
-
-
-    <!--<div class="d-flex justify-content-start">
-                    @foreach ($weapons as $weapon)
-    <div class="stats-box d-flex">
-
-                            <div class="stats-img">
-                                <img src="{{ asset('storage/' . $weapon->image) }}" alt="{{ $weapon->weapons_name }}"
-                                    class="weapon-img">
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_name }}</p>
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_damage }}</p>
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_range }}</p>
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_penetrate_max }}</p>
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_reload }}</p>
-                            </div>
-                            <div class="text-light">
-                                <p>{{ $weapon->weapons_supply }}</p>
-                            </div>
-                            @foreach ($weapon->launchers as $launcher)
-    <div class="text-light">
-                                    <p>{{ $launcher->launchers_supply_time }}</p>
-                                </div>
-                                <div class="text-light">
-                                    <p>{{ $launcher->launchers_intercept }}</p>
-                                </div>
-                                <div class="text-light">
-                                    <p>{{ $launcher->launchers_lowalt_range }}</p>
-                                </div>
-    @endforeach
-
-                            @foreach ($weapon->rifles as $rifle)
-    <div class="text-light">
-                                    <p>{{ $rifle->weapons_dispersion_x }}</p>
-                                </div>
-                                <div class="text-light">
-                                    <p>{{ $rifle->weapons_dispersion_y }}</p>
-                                </div>
-                                <div class="text-light">
-                                    <p>{{ $rifle->weapons_mag_size }}</p>
-                                </div>
-    @endforeach
-                        </div>
-    @endforeach
-                </div>-->
 
 @endsection

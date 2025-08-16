@@ -17,4 +17,9 @@ class Weapon extends Model
     {
         return $this->hasMany(Rifle::class, 'weapon_id');
     }
+
+    public function GL()
+    {
+        return $this->hasMany(GL::class, 'weapon_id');
+    }
 }
