@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rifles', function (Blueprint $table) {
+        Schema::create('machine_gun', function (Blueprint $table) {
             $table->id();
             $table->foreignId('weapon_id')->constrained('base_weapons')->onDelete('cascade');
             $table->float('weapons_dispersion_x');
             $table->float('weapons_dispersion_y');
             $table->integer('weapons_mag_size');
+            $table->boolean('stop_to_fire');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rifles');
+        Schema::dropIfExists('machine_gun');
     }
 };

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('grenade_launchers', function (Blueprint $table) {
             $table->id();
             $table->foreignId('weapon_id')->constrained('base_weapons')->onDelete('cascade');
-            $table->integer('weapons_dispersion_x');
-            $table->integer('weapons_dispersion_y');
+            $table->float('weapons_dispersion_x');
+            $table->float('weapons_dispersion_y');
             $table->integer('weapons_blast_radius');
             $table->timestamps();
         });

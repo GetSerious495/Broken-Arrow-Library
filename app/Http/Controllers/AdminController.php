@@ -16,7 +16,7 @@ class AdminController extends Controller
 
     public function weapons()
     {
-        $weapons = Weapon::with(['launchers'])->get();
+        $weapons = Weapon::paginate(6);
         return view('weapons', compact('weapons'));
     }
 }

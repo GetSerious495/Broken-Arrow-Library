@@ -22,4 +22,15 @@ class Weapon extends Model
     {
         return $this->hasMany(GL::class, 'weapon_id');
     }
+
+    public function MG()
+    {
+        return $this->hasMany(MG::class, 'weapon_id');
+    }
+
+    public function MANPADS()
+    {
+        return $this->hasMany(MANPADS::class, 'weapon_id');
+    }
+    
 }

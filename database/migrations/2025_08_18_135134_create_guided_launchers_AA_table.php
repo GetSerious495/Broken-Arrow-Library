@@ -11,14 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('launchers', function (Blueprint $table) {
+        Schema::create('guided_launchers_AA', function (Blueprint $table) {
             $table->id();
             $table->foreignId('weapon_id')->constrained('base_weapons')->onDelete('cascade');
-            $table->float('weapons_dispersion_x');
-            $table->float('weapons_dispersion_y');
+            $table->string('weapons_guidance_type');
             $table->integer('launchers_supply_time');
-            $table->boolean('launchers_intercept');
-            $table->integer('launchers_lowalt_range');
+            $table->integer('launchers_lowalt_range_min');
+            $table->integer('launchers_lowalt_range_max');
+            $table->integer('launchers_highalt_range_min');
+            $table->integer('launchers_highalt_range_max');
+            $table->boolean('AA_target_aircraft');
+            $table->boolean('AA_target_missile');
+            $table->integer('launchers_max_speed');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('launchers');
+        Schema::dropIfExists('guided_launchers_AA');
     }
 };

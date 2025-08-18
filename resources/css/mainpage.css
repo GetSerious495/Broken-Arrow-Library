@@ -42,11 +42,10 @@ a {
     border: 0.2rem solid #fff;
     border-radius: 0.5rem;
     margin-top: 5rem;
-    margin-left: 15%;
+    margin-left: 13%;
     justify-content: flex-start;
-    /* push content to left */
     align-items: flex-start;
-    /* push content to top */
+    flex: 0 0 calc(33.333% - 20px);
     padding: 1rem;
 
 }
@@ -110,4 +109,29 @@ a {
 .stats-target img {
     width: 2rem;
     height: auto;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #71965c; /* your desired color */
+    border-color: #71965c;
+    color: #ffffff;
+}
+
+/* Change all page link hover color */
+.pagination .page-link:hover {
+    background-color: #71965c;
+    border-color: #71965c;
+    color: #ffffff;
+}
+
+/* Change normal page link color */
+.pagination .page-link {
+    color: #000000;
+}
+
+.pagination-info {
+    margin-bottom: 10rem; /* adds space below text */
+    font-size: 0.95rem;
+    color: #000000;
+    text-align: center;
 }
