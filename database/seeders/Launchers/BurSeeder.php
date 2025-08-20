@@ -17,21 +17,21 @@ class LauncherSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'RPG-7V2',
-                    'weapons_ammo_name' => 'TBG-7V Thermobaric',
+                    'weapons_name' => 'Bur',
+                    'weapons_ammo_name' => '62mm Thermobaric',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 6,
-                    'weapons_damage' => 10.5,
+                    'weapons_damage' => 6,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 400,
-                    'weapons_penetrate_min' => 105,
-                    'weapons_penetrate_max' => 105,
+                    'weapons_range' => 300,
+                    'weapons_penetrate_min' => 60,
+                    'weapons_penetrate_max' => 60,
                     'weapons_supply' => 30.0,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => true,
-                    'image' => 'weapons/INF_TBG7_png.png'
+                    'image' => 'weapons/INF_MGK_BUR_png.png'
                 ],
                 'launcher' => [
                     'weapons_dispersion_x' => 4,

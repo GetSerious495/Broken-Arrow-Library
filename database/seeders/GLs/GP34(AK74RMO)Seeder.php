@@ -36,7 +36,8 @@ class GLSeeder extends Seeder
                 'GL' => [
                     'weapons_dispersion_x' => 4,
                     'weapons_dispersion_y' => 20,
-                    'weapons_blast_radius' => 12
+                    'weapons_blast_radius' => 12,
+                    'stop_to_fire' => false
                 ]
             ]
         ];

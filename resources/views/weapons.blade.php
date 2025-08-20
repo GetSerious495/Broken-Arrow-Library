@@ -54,7 +54,7 @@
                             </div>
                             <div class="text-light">
                                 <p>Pen</p>
-                                <p>{{ $weapon->weapons_penetrate_max }}mm</p>
+                                <p>{{ $weapon->weapons_penetrate_min }}mm</p>
                             </div>
                             <div class="text-light">
                                 <p>Reload</p>

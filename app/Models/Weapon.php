@@ -32,5 +32,19 @@ class Weapon extends Model
     {
         return $this->hasMany(MANPADS::class, 'weapon_id');
     }
+
+    public function ATGM()
+    {
+        return $this->hasMany(ATGM::class, 'weapon_id');
+    }
     
+    public function sniper()
+    {
+        return $this->hasMany(Sniper::class, 'weapon_id');
+    }
+
+     public function grenade()
+    {
+        return $this->hasMany(Grenade::class, 'weapon_id');
+    }
 }

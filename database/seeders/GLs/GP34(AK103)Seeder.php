@@ -22,16 +22,16 @@ class GLSeeder extends Seeder
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 2,
                     'weapons_reload' => 12,
-                    'weapons_damage' => 4.0,
+                    'weapons_damage' => 4,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 400,
+                    'weapons_range' => 300,
                     'weapons_penetrate_min' => 40,
                     'weapons_penetrate_max' => 40,
                     'weapons_supply' => 1.5,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => false,
-                    'image' => 'weapons/INF_AK12_GP_png.png'
+                    'image' => 'weapons/INF_AK103_GP_png.png'
                 ],
                 'GL' => [
                     'weapons_dispersion_x' => 4,

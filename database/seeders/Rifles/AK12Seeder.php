@@ -17,26 +17,26 @@ class RifleSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'KS-K',
-                    'weapons_ammo_name' => '12ga Slug',
+                    'weapons_name' => 'AK-12',
+                    'weapons_ammo_name' => '5.45x39mm',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 4,
-                    'weapons_damage' => 4.8,
+                    'weapons_damage' => 1.2,
                     'weapons_damage_type' => 'Kinetic',
-                    'weapons_range' => 200,
-                    'weapons_penetrate_min' => 4,
-                    'weapons_penetrate_max' => 12,
+                    'weapons_range' => 400,
+                    'weapons_penetrate_min' => 5,
+                    'weapons_penetrate_max' => 15,
                     'weapons_supply' => 0.1,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => true,
-                    'image' => 'weapons/INF_SAIGA_png.png'
+                    'image' => 'weapons/INF_AK12_png.png'
                 ],
                 'rifle' => [
                     'weapons_dispersion_x' => 2,
                     'weapons_dispersion_y' => 9,
-                    'weapons_mag_size' => 10
+                    'weapons_mag_size' => 30
                 ]
             ]
         ];

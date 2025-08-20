@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\Launcher;
+use App\Models\Grenade;
 use App\Models\Weapon;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class LauncherSeeder extends Seeder
+class GrenadeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,35 +17,34 @@ class LauncherSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'RPG-7V2',
-                    'weapons_ammo_name' => 'TBG-7V Thermobaric',
+                    'weapons_name' => 'Flashbang',
+                    'weapons_ammo_name' => 'Flashbang',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 6,
-                    'weapons_damage' => 10.5,
+                    'weapons_damage' => 0.5,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 400,
-                    'weapons_penetrate_min' => 105,
-                    'weapons_penetrate_max' => 105,
-                    'weapons_supply' => 30.0,
+                    'weapons_range' => 2,
+                    'weapons_penetrate_min' => 0,
+                    'weapons_penetrate_max' => 0,
+                    'weapons_supply' => 16.0,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
-                    'weapons_target_heli' => true,
-                    'image' => 'weapons/INF_TBG7_png.png'
+                    'weapons_target_heli' => false,
+                    'image' => 'weapons/FLASHBANG_png.png'
                 ],
                 'launcher' => [
-                    'weapons_dispersion_x' => 4,
-                    'weapons_dispersion_y' => 4,
-                    'launchers_supply_time' => 5,
-                    'launchers_intercept' => true,
-                    'launchers_lowalt_range' => 150
+                    'weapons_dispersion_x' => 0,
+                    'weapons_dispersion_y' => 0,
+                    'launchers_supply_time' => 2.5,
+                    'autoloader' => true
                 ]
             ]
         ];
 
         foreach ($weapons as $weaponData) {
             $weapon = Weapon::create($weaponData['base']);
-            Launcher::create(array_merge($weaponData['launcher'], [
+            Grenade::create(array_merge($weaponData['launcher'], [
                 'weapon_id' => $weapon->id
             ]));
         }
