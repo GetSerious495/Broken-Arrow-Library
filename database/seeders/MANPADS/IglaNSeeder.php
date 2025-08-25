@@ -14,17 +14,17 @@ class MANPADSeeder extends Seeder
      */
     public function run(): void
     {
-                $weapons = [
+        $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'Igla-S',
-                    'weapons_ammo_name' => 'Igla-S',
+                    'weapons_name' => 'Igla-N',
+                    'weapons_ammo_name' => 'Igla-N',
                     'weapons_trajectory' => 'Missile',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 6,
                     'weapons_damage' => 7,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 2000,
+                    'weapons_range' => 1800,
                     'weapons_penetrate_min' => 70,
                     'weapons_penetrate_max' => 70,
                     'weapons_supply' => 50,
@@ -35,11 +35,11 @@ class MANPADSeeder extends Seeder
                 ],
                 'MANPADS' => [
                     'weapons_guidance_type' => 'Fire-and-Forget',
-                    'launchers_supply_time' => 9,
+                    'launchers_supply_time' => 5,
                     'launchers_lowalt_range_min' => 200,
-                    'launchers_lowalt_range_max' => 2000,
+                    'launchers_lowalt_range_max' => 1800,
                     'launchers_highalt_range_min' => 200,
-                    'launchers_highalt_range_max' => 2000,
+                    'launchers_highalt_range_max' => 1800,
                     'AA_target_aircraft' => true,
                     'AA_target_missile' => false,
                     'launchers_max_speed' => 1800

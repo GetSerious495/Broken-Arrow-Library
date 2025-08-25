@@ -17,28 +17,28 @@ class ATGMSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'Kornet-M',
-                    'weapons_ammo_name' => '9M113FM-2',
+                    'weapons_name' => 'Metis',
+                    'weapons_ammo_name' => '9M115',
                     'weapons_trajectory' => 'Missile',
-                    'weapons_aim_time' => 3,
+                    'weapons_aim_time' => 2,
                     'weapons_reload' => 5,
-                    'weapons_damage' => 15,
+                    'weapons_damage' => 9,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 1800,
-                    'weapons_penetrate_min' => 150,
-                    'weapons_penetrate_max' => 150,
-                    'weapons_supply' => 75.0,
-                    'weapons_target_inf' => true,
+                    'weapons_range' => 800,
+                    'weapons_penetrate_min' => 550,
+                    'weapons_penetrate_max' => 550,
+                    'weapons_supply' => 50.0,
+                    'weapons_target_inf' => false,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => false,
-                    'image' => 'weapons/INF_KORNET_png.png'
+                    'image' => 'weapons/INF_METIS_png.png'
                 ],
                 'ATGM' => [
                     'weapons_guidance_type' => 'Semi-Active',
                     'launchers_supply_time' => 5,
-                    'launchers_range_min' => 200,
+                    'launchers_range_min' => 100,
                     'launchers_intercept' => true,
-                    'launchers_max_speed' => 720,
+                    'launchers_max_speed' => 435,
                     'stop_to_fire' => true
                 ]
             ]
