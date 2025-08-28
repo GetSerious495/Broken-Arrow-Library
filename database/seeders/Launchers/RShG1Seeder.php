@@ -17,28 +17,28 @@ class LauncherSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'SPG-9M (OG-9V)',
-                    'weapons_ammo_name' => 'OG-9V',
+                    'weapons_name' => 'RShG-1',
+                    'weapons_ammo_name' => 'RShG-1 Thermobaric',
                     'weapons_trajectory' => 'Direct shot',
-                    'weapons_aim_time' => 3,
-                    'weapons_reload' => 5,
-                    'weapons_damage' => 7.5,
+                    'weapons_aim_time' => 1,
+                    'weapons_reload' => 10,
+                    'weapons_damage' => 10.5,
                     'weapons_damage_type' => 'Explosive',
-                    'weapons_range' => 1000,
-                    'weapons_penetrate_min' => 75,
-                    'weapons_penetrate_max' => 75,
+                    'weapons_range' => 400,
+                    'weapons_penetrate_min' => 105,
+                    'weapons_penetrate_max' => 105,
                     'weapons_supply' => 30.0,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
-                    'weapons_target_heli' => false,
-                    'image' => 'weapons/INF_SPG9_png.png'
+                    'weapons_target_heli' => true,
+                    'image' => 'weapons/INF_RPG27_png.png'
                 ],
                 'launcher' => [
-                    'weapons_dispersion_x' => 5,
-                    'weapons_dispersion_y' => 6,
+                    'weapons_dispersion_x' => 4,
+                    'weapons_dispersion_y' => 4,
                     'launchers_supply_time' => 5,
-                    'launchers_intercept' => true,
-                    'launchers_lowalt_range' => 0
+                    'launchers_intercept' => false,
+                    'launchers_lowalt_range' => 150
                 ]
             ]
         ];

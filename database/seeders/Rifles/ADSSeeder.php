@@ -17,12 +17,12 @@ class RifleSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'AK-74',
+                    'weapons_name' => 'ADS',
                     'weapons_ammo_name' => '5.45x39mm',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 4,
-                    'weapons_damage' => 0.9,
+                    'weapons_damage' => 1.8,
                     'weapons_damage_type' => 'Kinetic',
                     'weapons_range' => 400,
                     'weapons_penetrate_min' => 5,
@@ -31,7 +31,7 @@ class RifleSeeder extends Seeder
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => true,
-                    'image' => 'weapons/INF_AK74M_png.png'
+                    'image' => 'weapons/INF_ADS_png.png'
                 ],
                 'rifle' => [
                     'weapons_dispersion_x' => 2,

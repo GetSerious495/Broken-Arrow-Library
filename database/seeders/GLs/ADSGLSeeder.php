@@ -17,21 +17,21 @@ class GLSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'DP-64',
-                    'weapons_ammo_name' => '45mm',
+                    'weapons_name' => '40mm UGL',
+                    'weapons_ammo_name' => '40x102mm',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 2,
-                    'weapons_reload' => 8,
-                    'weapons_damage' => 5.0,
+                    'weapons_reload' => 6,
+                    'weapons_damage' => 4.0,
                     'weapons_damage_type' => 'Explosive',
                     'weapons_range' => 400,
-                    'weapons_penetrate_min' => 45,
-                    'weapons_penetrate_max' => 45,
-                    'weapons_supply' => 2,
+                    'weapons_penetrate_min' => 40,
+                    'weapons_penetrate_max' => 40,
+                    'weapons_supply' => 1.5,
                     'weapons_target_inf' => true,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => false,
-                    'image' => 'weapons/INF_DP64_png.png'
+                    'image' => 'weapons/INF_ADS_GP_png.png'
                 ],
                 'GL' => [
                     'weapons_dispersion_x' => 4,

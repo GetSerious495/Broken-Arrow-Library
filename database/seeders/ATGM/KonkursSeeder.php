@@ -17,21 +17,21 @@ class ATGMSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'Konkurs-M',
-                    'weapons_ammo_name' => '9M113M',
+                    'weapons_name' => 'Konkurs',
+                    'weapons_ammo_name' => '9M113',
                     'weapons_trajectory' => 'Missile',
                     'weapons_aim_time' => 3,
                     'weapons_reload' => 5,
-                    'weapons_damage' => 11,
+                    'weapons_damage' => 10,
                     'weapons_damage_type' => 'Explosive',
                     'weapons_range' => 1600,
-                    'weapons_penetrate_min' => 750,
-                    'weapons_penetrate_max' => 750,
+                    'weapons_penetrate_min' => 650,
+                    'weapons_penetrate_max' => 650,
                     'weapons_supply' => 60.0,
                     'weapons_target_inf' => false,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => false,
-                    'image' => 'weapons/INF_KONKURS_M_png.png'
+                    'image' => 'weapons/INF_KONKURS_png.png'
                 ],
                 'ATGM' => [
                     'weapons_guidance_type' => 'Semi-Active',
