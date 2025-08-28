@@ -17,28 +17,29 @@ class LauncherSeeder extends Seeder
         $weapons = [
             [
                 'base' => [
-                    'weapons_name' => 'RPG-7V (HE)',
-                    'weapons_ammo_name' => 'OG-7V',
+                    'weapons_name' => 'RPG-29',
+                    'weapons_ammo_name' => '105mm HEAT',
                     'weapons_trajectory' => 'Direct shot',
                     'weapons_aim_time' => 1,
                     'weapons_reload' => 6,
-                    'weapons_damage' => 4,
+                    'weapons_damage' => 9,
                     'weapons_damage_type' => 'Explosive',
                     'weapons_range' => 600,
-                    'weapons_penetrate_min' => 40,
-                    'weapons_penetrate_max' => 40,
-                    'weapons_supply' => 5.0,
-                    'weapons_target_inf' => true,
+                    'weapons_penetrate_min' => 650,
+                    'weapons_penetrate_max' => 650,
+                    'weapons_supply' => 30.0,
+                    'weapons_target_inf' => false,
                     'weapons_target_vehicle' => true,
                     'weapons_target_heli' => true,
-                    'image' => 'weapons/INF_RPG7OG_png.png'
+                    'image' => 'weapons/INF_RPG29_png.png'
                 ],
                 'launcher' => [
                     'weapons_dispersion_x' => 4,
                     'weapons_dispersion_y' => 4,
-                    'launchers_supply_time' => 2,
+                    'launchers_supply_time' => 5,
                     'launchers_intercept' => true,
-                    'launchers_lowalt_range' => 150
+                    'launchers_lowalt_range' => 150,
+                    'weapons_blast_radius' => null
                 ]
             ]
         ];
